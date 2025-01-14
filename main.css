@@ -21,13 +21,12 @@ header {
 }
 header h1 {
     font-size: 2.5rem; /* Large, readable text size */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Strong drop shadow for better contrast */
+    border: 2px solid #ffffff;/* Strong drop shadow for better contrast */
+    background-color: rgba(0, 0, 0, 0.4);
     margin: 0; /* Remove default margin for better positioning */
     height: auto; /* Allow dynamic height based on content */
     width: auto; /* Allow dynamic width based on content */
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #4faf14 43.89%, #16934c 64.72%);
     color: white; /* Text color to contrast with background */
-    border: 1px dotted gray; /* Simplified border shorthand */
     box-shadow: 5px 5px 20px 0px grey; /* Box shadow for 3D effect */
     display: inline-flex; /* Use inline-flex for text alignment */
     justify-content: center; /* Center horizontally */
@@ -37,7 +36,6 @@ header h1 {
     z-index: 2; /* Ensure it appears above other elements */
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
     border-radius: 8px;
-    border-style: none;
     
 }
 
@@ -195,13 +193,12 @@ p {
 
     header h1 {
         font-size: 1rem; /* Large, readable text size */
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Strong drop shadow for better contrast */
         margin: 0; /* Remove default margin for better positioning */
         height: auto; /* Allow dynamic height based on content */
-        width: auto; /* Allow dynamic width based on content */
-        background-image: linear-gradient(92.88deg, #455EB5 9.16%, #4faf14 43.89%, #16934c 64.72%);
+        width: 50%; /* Allow dynamic width based on content */
+        border: 1px solid #ffffff;/* Strong drop shadow for better contrast */
+        background-color: rgba(0, 0, 0, 0.4);
         color: white; /* Text color to contrast with background */
-        border: 1px dotted gray; /* Simplified border shorthand */
         box-shadow: 5px 5px 20px 0px grey; /* Box shadow for 3D effect */
         display: inline-flex; /* Use inline-flex for text alignment */
         justify-content: center; /* Center horizontally */
@@ -209,7 +206,6 @@ p {
         padding: 10px 20px; /* Add padding for spacing inside the box */
         z-index: 2; /* Ensure it appears above other elements */
         border-radius: 3px;
-        border-style: none;
     }
     .sub_hed {
         color:#007bff;
