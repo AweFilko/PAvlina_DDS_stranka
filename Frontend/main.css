@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height:auto;
+}
+header {
+    position: relative;
+    top: 0; /* Ensures the header sticks to the top when scrolling */
+    text-align: center;
+    padding: 0; /* Remove padding to let height match exactly */
+    background: url(Galery/main_2.webp) no-repeat center center/cover;
+    background-color: #007bff; /* Fallback color if the image doesn't load */
+    color: white;
+    height: 400px; /* Increase height to make the image fit better */
+    width: 100%; /* Ensures full width */
+    display: flex; /* Center content inside the header */
+    justify-content: center; /* Horizontally align content */
+    align-items: center; /* Vertically align content */
+}
+header h1 {
+    font-size: 2.5rem; /* Large, readable text size */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Strong drop shadow for better contrast */
+    margin: 0; /* Remove default margin for better positioning */
+    height: auto; /* Allow dynamic height based on content */
+    width: auto; /* Allow dynamic width based on content */
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #4faf14 43.89%, #16934c 64.72%);
+    color: white; /* Text color to contrast with background */
+    border: 1px dotted gray; /* Simplified border shorthand */
+    box-shadow: 5px 5px 20px 0px grey; /* Box shadow for 3D effect */
+    display: inline-flex; /* Use inline-flex for text alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px 20px; /* Add padding for spacing inside the box */
+    transform: skew(-10deg, 0deg); /* Adjust skew for better readability */
+    z-index: 2; /* Ensure it appears above other elements */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effect */
+    border-radius: 8px;
+    border-style: none;
+    
+}
+
+header h1:hover {
+    transform: skew(0deg, 0deg) scale(1.05); /* Reset skew and slightly enlarge on hover */
+    background-color: #2e6873; /* Darken background on hover */
+}
+
+.sub_hed {
+    color:#007bff;
+    display:inline-block;
+    padding: 10px 20px; /* Space around the text */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: fit-content;
+    text-shadow: rgba(0,0,0,0) 0 3px 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: auto; /* Full viewport height */
+}
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* In case content exceeds height */
+    display:flex;
+    flex-direction: column;
+    height: 35rem;
+    transition: all .5s;
+
+}
+.left {
+    background: url(Galery/pavlina_main.webp) no-repeat center center/cover;
+    border-right: 2px solid #dee2e6;
+    color: rgba(255, 255, 255, 0); 
+    text-shadow: rgba(0,0,0,0) 0 3px 8px; 
+    align-items: center;
+}
+
+.right {
+    background: url(Galery/kids_main.webp) no-repeat center center/cover;
+    color: rgba(255, 255, 255, 0);
+    text-shadow: rgba(0,0,0,0) 0 3px 8px;
+    align-items:center;
+}
+
+.right:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,1) 0 3px 8px;
+    background: url(Galery/kids_main_blur.webp) no-repeat center center/cover;
+} 
+.left:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: rgba(0,0,0,1) 0 3px 8px;
+    background: url(Galery/pavlina_main_blur_2.webp) no-repeat center center/cover;
+}
+
+
+
+h2 {
+    color: #007bff;
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+.divider {
+    width: 100%;
+    height: 4rem;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #4faf14 43.89%, #16934c 64.72%);
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    
+}
+.left_div, .right_div {
+    flex:1;
+    overflow-y: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.pusher {
+    flex-grow: 1;
+}
+
+
+
+.go_to {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #4faf14 43.89%, #16934c 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%
+}
+
+.go_to:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+
+@media (min-width: 768px) {
+.go_to {
+    padding: 0 2.6rem;
+}
+}
+.main_footer {
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    width: 100%;
+    height: 4rem;
+    background-color: #455EB5;
+    height:auto;
+}
+.mf_left, .mf_right {
+    display:flex;
+    flex:1;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    padding:1.5rem;
+    color:#FFFFFF;
+}
+
+.facebook {
+    object-fit: cover;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.facebook img {
+    height: 3rem;
+}
+
+.facebook:hover {
+    transform: scale(1.1);
+
+}
+.divider_2 {
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #4faf14 43.89%, #16934c 64.72%);
+
+}
+
