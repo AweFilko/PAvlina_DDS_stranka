@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Text Visibility</title>
+    <style>
+        /* Initial styles */
+        .toggle-text {
+            display: none;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* When checkbox is checked, show the text */
+        #toggle-button:checked ~ .toggle-text {
+            display: block;
+        }
+
+        /* Style for the button */
+        .toggle-label {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.3s;
+        }
+
+        /* Hover effect for the button */
+        .toggle-label:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hidden checkbox -->
+    <input type="checkbox" id="toggle-button" style="display: none;">
+
+    <!-- Label acts as a button -->
+    <label for="toggle-button" class="toggle-label">Show/Hide Text</label>
+
+    <!-- Text to toggle -->
+    <p class="toggle-text">This is the text that becomes visible when the button is pressed!</p>
+</body>
+</html>
