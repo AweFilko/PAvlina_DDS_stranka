@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="sk"> <!-- Ensures accessibility with a defined language -->
 <head>
-    <meta charset="UTF-8"> <!-- Character encoding for all browsers -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
-    <meta name="description" content="Ambulancia PAvlina"> <!-- SEO meta tag -->
-    <meta name="author" content="Filip Brutovský"> <!-- SEO meta tag -->
-    <meta name="keywords" content="ambulancia, PAvlina, Aksana Ištociová, Kežmarok"> <!-- SEO meta tag -->
-    <meta name="robots" content="index, follow"> <!-- Tells search engines to index the page -->
     <title>Ambulancia PAvlina</title> <!-- Page title for browser tab -->
     <link rel="stylesheet" href="pavlina.css"> <!-- Link to external CSS -->
     <link rel="icon" href="Galery/filo.png" type="image/webp"> <!-- Favicon -->
@@ -24,14 +18,29 @@
     </header>
     <div class="menu">
         <div class= "menu_item" > ÚVOD </div>
-        <div class= "menu_item" > KONTAKT </div>
-        <div class= "menu_item" > O NÁS </div>
-        <div class= "menu_item" > REZERVÁCIE </div>
-        <div class= "menu_item_end"> END </div>
+        <div class= "menu_item" onclick="location.href='Pavlina_kontakt.html'"> KONTAKT </div>
+        <div class= "menu_item" onclick="location.href='Pavlina_o_nas.html'"> O NÁS </div>
+        <div class= "menu_item" onclick="location.href='Pavlina_rezervacie.html'"> REZERVÁCIE </div> <!--onclick="location.href='main.html'"-->
+        <div class= "menu_item_end" onclick="location.href='Pavlina_galeria.html'"> GALÉRIA </div>
+    </div>
+    <div class="main_paragraf_header">O našej klinike</div>
+    <div class="main_paragraf">
+        Rehabilitačné centrum Pavlína je moderné zariadenie zamerané na poskytovanie kvalitnej rehabilitačnej starostlivosti pre pacientov s rôznymi zdravotnými problémami. Naším cieľom je pomôcť klientom dosiahnuť maximálnu možnú obnovu ich pohybových schopností a celkového zdravia prostredníctvom individuálne prispôsobených terapií.
+
+V našom centre kombinujeme odborné znalosti, inovatívne metódy a profesionálny prístup s cieľom zabezpečiť efektívnu liečbu a komfortné prostredie.
     </div>
 
-<button onclick="location.href='main.html'">
-späť
-</button>
+<footer class="main_footer">
+    <div class="mf_left">
+        Kontakt:<br>
+        Aksana Ištociová<br>
+        ✆: +421 950 673 098<br>
+        ✉: aksanakurbat@gmail.com
+    </div>
+
+    <div class="mf_right">
+        Všetky práva vyhradené &copy; 2025
+    </div>
+</footer>
 </body>
 </html>
